@@ -14,12 +14,30 @@ Then, run the project in development mode with:
 npm run dev
 ```
 ### Docker
-You can also run the project locally by pulling the docker image and running it as a container by running the following command:
+This project is ran as a docker container in production and it makes sense to build the image and run the container on your machine when there are any major changes (such as node/npm or main dependency updates), just to make sure the project will build and run without issues.
+
+You can do this by running the following commands in the root directory of the project.
+
+```
+#build the image
+docker build -t dev-helper-image .
+
+#run the container
+docker run --name dev-helper \
+-p 8089:80 \
+dev-helper-image
+```
+
+You can also pull the latest image of this project from Docker Hub and run locally with the following command.
 
 ```
 docker run --name dev-helper -p 8089:80 \
 mannyscontainers/dev-helper-docs:latest
 ```
+
+docker run --name dev-helper -d \
+-p 8088:80 \
+mannyscontainers/dev-helper-docs:latest
 
 ## Contributing
 ### Recommendations
@@ -34,8 +52,6 @@ For any issues, please create an issue and be as descriptive as possible and add
 [**Setting up CI/CD Traversy Media YT**](https://www.youtube.com/watch?v=X3F3El_yvFg)
 
 [**Docker Hub Github Actions**](https://docs.docker.com/ci-cd/github-actions/)
-
-
 
 
 TODO:
