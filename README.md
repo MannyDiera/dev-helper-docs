@@ -53,12 +53,6 @@ For any issues, please create an issue and be as descriptive as possible and add
 
 [**Docker Hub Github Actions**](https://docs.docker.com/ci-cd/github-actions/)
 
-
-## TODO:
-Thist content to be moved into an actual documentation/tutorial page within the app
-
-#### NGINX notes
-
 #### WatchTower notes 
 [**WatchTower Docs:**](https://containrrr.dev/watchtower)
 
