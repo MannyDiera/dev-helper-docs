@@ -1,0 +1,19 @@
+{
+  "name": "dev-helper-docs",
+  "version": "0.0.1",
+  "description": "The documentation for dev-helper",
+  "main": "index.js",
+  "authors": {
+    "name": "Manny",
+    "email": "mdiera.dvk@gmail.com"
+  },
+  "repository": "https://github.com/MannyDiera/dev-helper-docs.git/dev-helper-docs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
