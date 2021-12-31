@@ -29,3 +29,4 @@ jobs:
           file: Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
+          tags: latest
