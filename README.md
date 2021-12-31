@@ -27,3 +27,7 @@ If you have any ideas or recommendations to add to this project, just let me kno
 
 ### Issues
 For any issues, please create an issue and be as descriptive as possible and add instructions to recreate your issue (OS, node & npm versions, etc.)
+
+
+### References
+[**Setting up CI/CD**](https://www.youtube.com/watch?v=X3F3El_yvFg)
