@@ -27,6 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: '**/package-lock.json'
-
+    - run: echo ls
     - run: npm i --no-optional
     - run: npm run build --if-present
