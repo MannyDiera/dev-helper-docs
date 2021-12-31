@@ -54,18 +54,19 @@ For any issues, please create an issue and be as descriptive as possible and add
 [**Docker Hub Github Actions**](https://docs.docker.com/ci-cd/github-actions/)
 
 
-TODO:
-To be moved into an actual documentation/tutorial page
+## TODO:
+Thist content to be moved into an actual documentation/tutorial page within the app
 
-#### NGINX
-**-Check if Nginx is running:** sudo systemctl status nginx
+#### NGINX notes
 
-**-Open Nginx conf**: cd /etc/nginx/sites-available && sudo nano default
+#### WatchTower notes 
+[**WatchTower Docs:**](https://containrrr.dev/watchtower)
 
-**-Check if your nginx config is valid:** sudo nginx -t
+When running WatchTower, there is an optional parameter we can pass in for the poll interval, it defaults to 86400 (24 Hours) as mentioned in the [poll interval section](https://containrrr.dev/watchtower/arguments/#poll_interval)
 
-**-Restart Nginx after updating the file and validating it:** sudo systemctl restart nginx
+You can also run the WatchTower container just once to check to see if there is an updated version of any docker container currently running, run the following:
 
-Docker
-
-docker login -u mannyscontainers
+```
+docker run -d --rm --name watchtower \
+-v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup --run-once
+```

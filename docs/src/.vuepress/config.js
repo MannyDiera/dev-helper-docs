@@ -20,7 +20,6 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
-
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
@@ -34,30 +33,31 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'Development T & W',
+        link: '/software/'
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Tutorials',
+        link: '/tutorials/'
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'Nginx Notes',
+        link: '/nginx/'
       }
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
+    // You can either set the left nav like this or with auto, which uses the headings, see nginx/README.md
+    // sidebar: {
+    //   '/guide/': [
+    //     {
+    //       title: 'Guide',
+    //       collapsable: false,
+    //       children: [
+    //         '',
+    //         'using-vue',
+    //       ]
+    //     }
+    //   ],
+    // }
   },
 
   /**
@@ -65,6 +65,6 @@ module.exports = {
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
+    '@vuepress/plugin-medium-zoom'
   ]
 }

@@ -1,15 +1,15 @@
 ---
 home: true
 heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: The documentation for dev-helper
+tagline: Documentation for the Dev Helper App as well as a place to document and share notes.
 actionText: Quick Start →
-actionLink: /guide/
+actionLink: /software/
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
+- title: Development Tooling & Workflows
+  details: Gathering requirements, planning and modeling solutions, diagrams, etc.
+- title: Tutorials
+  details: Github Actions, FullStack Apps with Docker, etc.
+- title: Nginx
+  details: Start/Stop/Configure/Validate Nginx
 footer: Made by Manny with ❤️
 ---
