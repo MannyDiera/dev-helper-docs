@@ -28,3 +28,14 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/dev-helper-docs:latest
+      -
+        name: Sleep for 5s
+        uses: juliangruber/sleep-action@v1
+        with:
+          time: 5s
+      -
+        name: Replace running image with latest
+        run: |
+          echo 1. In working directory:
+          ls -a
+          sh ./scripts/post-publish.sh
