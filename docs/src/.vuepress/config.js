@@ -43,6 +43,10 @@ module.exports = {
       {
         text: 'Nginx Notes',
         link: '/nginx/'
+      },
+      {
+        text: 'Play',
+        link: '/play/'
       }
     ],
     // You can either set the left nav like this or with auto, which uses the headings, see nginx/README.md
@@ -65,6 +69,14 @@ module.exports = {
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom'
+    '@vuepress/plugin-medium-zoom',
+    ['vuepress-plugin-code-copy', {
+      color: '#6cb4e1',
+      backgroundTransition: true,
+      backgroundColor: '#ababab',
+      successText: 'Copied!',
+      staticIcon: true
+    }
+    ]
   ]
 }

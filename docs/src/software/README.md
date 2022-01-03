@@ -2,27 +2,33 @@
 sidebar: auto
 ---
 
-# Development Tooling & Workflows
+# Development Tooling & Workflows *In Progress
 
-## Gathering Requirements
+## Tooling
+### Node, NPM & NVM
 
-## Understanding the Business Objective and Asking Questions
+### VSCode Or Webstorm
 
-## Brainstorming and Planning a Solution
+## Workflows
+### Gathering Requirements
 
-## Modeling the Solution / Peer Review
+### Understanding the Business Objective and Asking Questions
 
-## Sample Project: Recipe App
+### Brainstorming and Planning a Solution
 
-### What are the requirements?
+### Modeling the Solution / Peer Review
 
-### What is the business objective?
+### Sample Project: Recipe App
 
-### What is my proposed solution?
+#### What are the requirements?
 
-### Model of proposed solution.
+#### What is the business objective?
 
-### Implementation
+#### What is my proposed solution?
+
+#### Model of proposed solution.
+
+#### Implementation
 - Time and resource availability
 - Authentication & security models
 - Version control strategy (branching, tagging, conventions, etc.)
@@ -32,13 +38,13 @@ sidebar: auto
 - Analytics
 - Feedback loop
 
-#### Tooling
+##### Tooling
 - Stack & Libraries for development and Unit+Integration testing
 - Authentication & Security Providers
 - Pipelines & tooling around this
 
-#### Task management
+##### Task management
 - A spreadsheet, Smartsheet, Jira, etc.
 
-#### Bug management
+##### Bug management
 - Create issues in Github repo, Jira, etc.
