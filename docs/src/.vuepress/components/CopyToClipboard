@@ -1,0 +1,33 @@
+<template>
+  <div>
+    <slot></slot>
+    <p>Here, copy this thing: {{thingToCopy}}</p>
+    <button
+        v-clipboard:copy="thingToCopy"
+        v-clipboard:success="handleCopyStatus(true)"
+        v-clipboard:error="handleCopyStatus(false)"
+    >
+      Copy the thing!
+    </button>
+    <p v-if="copySucceeded === true">Copied!</p>
+    <p v-if="copySucceeded === false">Press CTRL+C to copy.</p>
+  </div>
+</template>
+
+<script>
+export default {
+
+  data() {
+    return {
+      copySucceeded: null
+      thingToCopy: `A string that's not all that long or important. Sorry to disappoint.`
+    }
+  },
+
+  methods: {
+    handleCopyStatus(status) {
+      this.copySucceeded = status
+    }
+  }
+}
+</script>
