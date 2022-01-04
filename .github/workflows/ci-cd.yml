@@ -35,4 +35,4 @@ jobs:
           time: 5s
       -
         name: Run Watchtower container to pull latest image
-        run: docker run -d --rm --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup --run-once
+        run: /usr/bin/docker run -d --rm --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup --run-once
