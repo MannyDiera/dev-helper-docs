@@ -35,5 +35,5 @@ jobs:
           time: 5s
       -
         name: Replace running image with latest
-        shell: bash
+        shell: sh
         run: ls
