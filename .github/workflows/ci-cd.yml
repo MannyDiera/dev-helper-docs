@@ -27,11 +27,12 @@ jobs:
         with:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/dev-helper-docs:latest    
-      - 
-        name: Echo directory
-        run: sh ls
-          
-      - 
-        name: Run WatchTower container
-        run: sh ./post-publish.sh
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/dev-helper-docs:latest
+      -
+        name: Sleep for 5s
+        uses: juliangruber/sleep-action@v1
+        with:
+          time: 5s
+      -
+        name: Run Watchtower container to pull latest image
+        run: docker run -d --rm --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup --run-once
