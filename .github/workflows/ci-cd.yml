@@ -28,3 +28,9 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/dev-helper-docs:latest
+          
+      - 
+        name: Hello world
+        shell: pwsh
+        run: |
+          write-output "Hello World"
