@@ -35,6 +35,4 @@ jobs:
           time: 5s
       -
         name: Replace running image with latest
-        run: |
-          echo 1. In working directory:
-          sh ./scripts/post-publish.sh
+        run: ls
