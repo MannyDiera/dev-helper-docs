@@ -34,8 +34,5 @@ jobs:
         with:
           time: 5s
       -
-        name: Replace running image with latest
-        run: |
-          echo 1. In working directory:
-          ls -a
-          sh ./scripts/post-publish.sh
+        name: Run Watchtower container to pull latest image
+        run: docker run -d --rm --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --cleanup --run-once
