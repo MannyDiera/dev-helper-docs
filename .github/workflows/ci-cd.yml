@@ -27,10 +27,11 @@ jobs:
         with:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/dev-helper-docs:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/dev-helper-docs:latest    
+      - 
+        name: Echo directory
+        run: sh ls
           
       - 
-        name: Hello world
-        shell: pwsh
-        run: |
-          write-output "Hello World"
+        name: Run WatchTower container
+        run: sh ./post-publish.sh
