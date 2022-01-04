@@ -36,4 +36,4 @@ jobs:
       -
         name: Replace running image with latest
         shell: sh
-        run: ls
+        run: /usr/bin/ls
