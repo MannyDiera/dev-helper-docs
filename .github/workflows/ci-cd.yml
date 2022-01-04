@@ -37,5 +37,4 @@ jobs:
         name: Replace running image with latest
         run: |
           echo 1. In working directory:
-          ls -a
-          sh ./scripts/post-publish.sh
+          ls
