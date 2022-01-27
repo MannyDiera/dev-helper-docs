@@ -37,16 +37,16 @@ module.exports = {
         link: '/software/'
       },
       {
-        text: 'Tutorials',
-        link: '/tutorials/'
+        text: 'Git Notes',
+        link: '/git/'
       },
       {
         text: 'Nginx Notes',
         link: '/nginx/'
       },
       {
-        text: 'Play',
-        link: '/play/'
+        text: 'Tutorials',
+        link: '/tutorials/'
       }
     ],
     // You can either set the left nav like this or with auto, which uses the headings, see nginx/README.md
