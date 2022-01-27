@@ -7,9 +7,11 @@ actionLink: /software/
 features:
 - title: Development Tooling & Workflows
   details: Gathering requirements, planning and modeling solutions, diagrams, etc.
-- title: Tutorials
-  details: Github Actions, FullStack Apps with Docker, etc.
 - title: Nginx
   details: Start/Stop/Configure/Validate Nginx
+- title: Git Notes
+  details: Helpful git commands and notes
+- title: Tutorials
+  details: Github Actions, FullStack Apps with Docker, etc.
 footer: Made by Manny with ❤️
 ---
