@@ -53,6 +53,8 @@ For any issues, please create an issue and be as descriptive as possible and add
 
 [**Docker Hub Github Actions**](https://docs.docker.com/ci-cd/github-actions/)
 
+[**NGINX for SPA**](https://jonathanmh.com/deploying-a-vue-js-single-page-app-including-router-with-docker/)
+
 #### WatchTower notes 
 [**WatchTower Docs:**](https://containrrr.dev/watchtower)
 
